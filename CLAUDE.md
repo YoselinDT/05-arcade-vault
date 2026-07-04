@@ -12,16 +12,6 @@ Arcade Vault is a planned platform for playing games online and competing for po
 
 This project pins `next@16.2.10`, a version ahead of your training data — App Router APIs, conventions, and config may differ from what you expect. Per AGENTS.md, consult `node_modules/next/dist/docs/` (organized as `01-app`, `02-pages`, `03-architecture`, `04-community`) before writing Next.js code, especially for routing, data fetching, and config APIs. Do not assume older-Next.js patterns still apply.
 
-## Commands
-
-```bash
-npm run dev      # start dev server
-npm run build    # production build
-npm run start    # serve production build
-npm run lint     # eslint (flat config, eslint.config.mjs)
-```
-
-There is no test setup yet (no test runner in package.json).
 
 ## Architecture
 
@@ -33,3 +23,7 @@ There is no test setup yet (no test runner in package.json).
 ## Spec-driven workflow
 
 Per README.md, this project follows spec-driven design using the `Klerith/fernando-skills` skill set (`npx skills@latest add Klerith/fernando-skills`), with work organized through `/spec` and `/spec-impl` commands. No spec files exist in the repo yet.
+
+## Skills
+Usa siempre /front-design para diseñar la interfas del usuario
+
