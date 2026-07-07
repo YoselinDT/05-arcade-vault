@@ -25,7 +25,8 @@
 *.pem
 
 # playwright mcp output
-/.playwright-screenshots
+.playwright-screenshots/*
+!.playwright-screenshots/.gitkeep
 
 # debug
 npm-debug.log*
