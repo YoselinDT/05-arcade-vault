@@ -1,6 +1,6 @@
 # SPEC 02 — Login y registro (solo visual)
 
-> **Status:** Draft
+> **Status:** Implementado
 > **Depends on:** [01-pantallas-visuales-mvp](./01-pantallas-visuales-mvp.md)
 > **Date:** 2026-07-07
 > **Objective:** Portar la pantalla de login/registro (`auth.jsx` del template) a la ruta `/login` de Next.js App Router, conectando el botón "Iniciar Sesión" del Nav, sin implementar autenticación real ni cambiar el estado de sesión en ninguna pantalla.

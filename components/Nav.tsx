@@ -35,7 +35,9 @@ export default function Nav() {
           <span className="coin"></span>
           <span>CRÉDITOS · 03</span>
         </div>
-        <button className="btn auth-btn">Iniciar Sesión</button>
+        <Link href="/login" className="btn auth-btn">
+          Iniciar Sesión
+        </Link>
         <button className="btn ghost hamburger" onClick={() => setOpen(true)} aria-label="Menú">
           ≡
         </button>
@@ -52,7 +54,9 @@ export default function Nav() {
         <Link href="/hall-of-fame" className={isSalon ? "active" : ""} onClick={close}>
           Salón de la Fama
         </Link>
-        <a onClick={close}>Iniciar Sesión</a>
+        <Link href="/login" onClick={close}>
+          Iniciar Sesión
+        </Link>
         <div style={{ flex: 1 }}></div>
         <div className="pixel" style={{ fontSize: 9, color: "var(--ink-faint)", letterSpacing: "0.16em" }}>
           CRÉDITOS · 03
