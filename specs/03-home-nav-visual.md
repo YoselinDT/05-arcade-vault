@@ -1,6 +1,6 @@
 # SPEC 03 — Home como página principal y Nav superior actualizado
 
-> **Status:** Draft
+> **Status:** Aprobado
 > **Depends on:** [01-pantallas-visuales-mvp](./01-pantallas-visuales-mvp.md), [02-login-registro-visual](./02-login-registro-visual.md)
 > **Date:** 2026-07-07
 > **Objective:** Portar la pantalla Home (`home.jsx`) como página principal (`/`) de Arcade Vault, mover la Biblioteca actual a `/games`, y actualizar el Nav superior con las pestañas Inicio / Biblioteca / Salón de la Fama / Acerca de (esta última visible pero inerte, sin ruta todavía), según el diseño de `references/templates/home-about/`.
