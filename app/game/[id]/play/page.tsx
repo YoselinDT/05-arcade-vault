@@ -26,11 +26,12 @@ export default function GamePlayerPage() {
 function Player({ game }: { game: (typeof GAMES)[number] }) {
   const [score, setScore] = useState(0);
   const [lives] = useState(3);
-  const [level, setLevel] = useState(1);
   const [paused, setPaused] = useState(false);
   const [over, setOver] = useState(false);
-  const [name, setName] = useState(MOCK_USER.name);
+  const [name, setName] = useState<string>(MOCK_USER.name);
   const [saved, setSaved] = useState(false);
+
+  const level = 1 + Math.floor(score / 2500);
 
   useEffect(() => {
     if (over || paused) return;
@@ -38,14 +39,9 @@ function Player({ game }: { game: (typeof GAMES)[number] }) {
     return () => clearInterval(t);
   }, [over, paused]);
 
-  useEffect(() => {
-    if (score > 0 && score % 2500 < 100) setLevel((l) => l + 1);
-  }, [score]);
-
   const endGame = () => setOver(true);
   const restart = () => {
     setScore(0);
-    setLevel(1);
     setPaused(false);
     setOver(false);
     setSaved(false);
